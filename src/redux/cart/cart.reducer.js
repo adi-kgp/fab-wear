@@ -33,6 +33,6 @@ const CartReducer = (state = INITIAl_STATE, action) => {
     default:
       return state;
   }
-}
+};
 
 export default CartReducer;
