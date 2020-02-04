@@ -3,4 +3,9 @@
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+  @media screen and (max-width: 800px){
+    display: grid;
+    padding: 0 10px;
+    grid-gap: 15px;
+  }
 }
