@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import {Route} from 'react-router-dom';
-import CollectionPageContainer from '../collection/collection.container';
 import {connect} from 'react-redux';
 import {fetchCollectionsStartAsync} from '../../redux/shop/shop.actions';
-import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
  
+const CollectionPageContainer = lazy(() => import('../collection/collection.container'));
+const CollectionsOverviewContainer = lazy(() => import('../../components/collections-overview/collections-overview.container'));
 
 class ShopPage extends React.Component {
   
@@ -18,10 +18,12 @@ class ShopPage extends React.Component {
 
     return(
       <div className='shop-page'>
+        <Suspense fallback={<div>Loading...</div>}>
         <Route exact path = {`${match.path}`} 
           component={CollectionsOverviewContainer} />
         <Route path = {`${match.path}/:collectionId`} 
           component={CollectionPageContainer} />
+        </Suspense>  
       </div>
     );
   }
