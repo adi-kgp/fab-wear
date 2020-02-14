@@ -32,6 +32,11 @@ React framework, HTML and SASS.
 
 - SASS
 
+- Higher Order Components
+ 
+- Latest ES 6,7,8 features 
+ 
+
 
 ## Link to the deployment
 
