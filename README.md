@@ -18,7 +18,7 @@ React framework, HTML and SASS.
 
 - React Suspense + React Lazy
 
-- Firebase
+- Firebase and Firestore
 
 - Stripe API
 
@@ -33,6 +33,8 @@ React framework, HTML and SASS.
 - SASS
 
 - Higher Order Components
+
+- Google authentication 
  
 - Latest ES 6,7,8 features 
  
