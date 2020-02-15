@@ -30,7 +30,7 @@ React framework, HTML and SASS.
 
 - State Normalization
 
-- SASS
+- Performance tuning (Memoization using reselect)
 
 - Higher Order Components
 
